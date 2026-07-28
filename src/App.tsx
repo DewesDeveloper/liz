@@ -11,10 +11,6 @@ import img2 from './img/2.jpg';
 import img3 from './img/3.jpg';
 import img4 from './img/4.jpg';
 
-import photoBig from './img/6.jpg'; // Большое вертикальное
-import photoMed from './img/7.jpg'; // Среднее горизонтальное
-import photoSmall from './img/8.jpg'; // Маленькое квадратное
-
 interface CardItem {
   id: number;
   title: string;
@@ -52,7 +48,6 @@ export default function App() {
   useSmoothScroll();
   const heroRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
-  const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
